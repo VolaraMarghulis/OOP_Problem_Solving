@@ -1,11 +1,15 @@
-Problem
-Define the Product class with the field price.
-Define the Book class derived from the Product class, having additional fields title, author, and publisher. 
-Input 5 objects of type Book into an array. 
-Search for and display the book with the highest price.
+## Problem
 
-Problem Solving
+Define the Product class with the field **price**.
 
+Define the **Book** class derived from the **Product** class, having additional fields **title**, **author**, and **publisher**. 
+
+Input 5 objects of type **Book** into an array.
+
+Search for and display the **book** with the highest **price**.
+
+## Problem Solving
+```Java
 //Create Product class
 public class Product {
     private int price;
@@ -18,7 +22,8 @@ public class Product {
         return price;
     }
 }
-===============================
+```
+```Java
  //class -Book- that inherits another class -Product-
 public class Book extends Product {
     //Instance Viariables
@@ -48,7 +53,8 @@ public class Book extends Product {
                 + " , publisher = " + this.publisher +" , price = " + getPrice() + "}";
     }
 }
-==========================================================================================
+```
+```Java
 public class Main {
  public static void main(String[] args) {
         //Scanner object to read from the console
@@ -83,3 +89,4 @@ public class Main {
         System.out.println("Most expensive book is: " + mostExpensiveBook);
     }
 }
+```
